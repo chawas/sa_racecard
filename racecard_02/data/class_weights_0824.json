@@ -1,0 +1,28 @@
+{
+  "classes": [
+    {"name": "Maiden Plate", "abbreviation": "MP", "weight": 1},
+    {"name": "Maiden Plate (Fillies)", "abbreviation": "MP-F", "weight": 2},
+    {"name": "Open Maiden", "abbreviation": "OM", "weight": 3},
+    {"name": "Juvenile", "abbreviation": "Juv", "weight": 4},
+    {"name": "Class 6", "abbreviation": "Cl6", "weight": 5},
+    {"name": "Class 5", "abbreviation": "Cl5", "weight": 6},
+    {"name": "Class 4", "abbreviation": "Cl4", "weight": 7},
+    {"name": "Class 3", "abbreviation": "Cl3", "weight": 8},
+    {"name": "Class 2", "abbreviation": "Cl2", "weight": 9},
+    {"name": "Class 1", "abbreviation": "Cl1", "weight": 10},
+    {"name": "Listed", "abbreviation": "L", "weight": 11},
+    {"name": "Group 3", "abbreviation": "G3", "weight": 12},
+    {"name": "Group 2", "abbreviation": "G2", "weight": 13},
+    {"name": "Group 1", "abbreviation": "G1", "weight": 14},
+    {"name": "Handicap", "abbreviation": "Hcp", "weight": 15},
+    {"name": "Merit Rated", "abbreviation": "MR", "weight": 16},
+    {"name": "Benchmark", "abbreviation": "BM", "weight": 17},
+    {"name": "Stakes", "abbreviation": "Stk", "weight": 18},
+    {"name": "Conditions", "abbreviation": "Cond", "weight": 19},
+    {"name": "Allowance", "abbreviation": "Allow", "weight": 20},
+    {"name": "Apprentice", "abbreviation": "App", "weight": 21},
+    {"name": "Novice", "abbreviation": "Nov", "weight": 22},
+    {"name": "Graduation", "abbreviation": "Grad", "weight": 23},
+    {"name": "Restricted", "abbreviation": "Rest", "weight": 24}
+  ]
+}

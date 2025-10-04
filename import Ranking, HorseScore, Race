@@ -1,0 +1,41 @@
+                                           Table "public.racecard_02_ranking"
+       Column       |           Type           | Collation | Nullable |                     Default                     
+--------------------+--------------------------+-----------+----------+-------------------------------------------------
+ id                 | integer                  |           | not null | nextval('racecard_02_ranking_id_seq'::regclass)
+ race_id            | integer                  |           | not null | 
+ horse_id           | integer                  |           | not null | 
+ rank               | integer                  |           | not null | 
+ overall_score      | double precision         |           | not null | 
+ speed_score        | double precision         |           | not null | 
+ form_score         | double precision         |           | not null | 
+ class_score        | double precision         |           | not null | 
+ consistency_score  | double precision         |           | not null | 
+ value_score        | double precision         |           |          | 50
+ physical_score     | double precision         |           | not null | 
+ intangible_score   | double precision         |           | not null | 
+ speed_rating_score | double precision         |           | not null | 
+ best_mr_score      | double precision         |           | not null | 
+ current_mr_score   | double precision         |           | not null | 
+ jt_score           | double precision         |           | not null | 
+ odds_score         | double precision         |           | not null | 
+ weight_score       | double precision         |           | not null | 
+ draw_score         | double precision         |           | not null | 
+ blinkers_score     | double precision         |           | not null | 
+ best_mr_value      | integer                  |           |          | 0
+ current_mr_value   | integer                  |           |          | 0
+ jt_value           | integer                  |           |          | 50
+ odds_value         | double precision         |           |          | 0
+ weight_value       | double precision         |           |          | 0
+ draw_value         | integer                  |           |          | 0
+ blinkers_value     | boolean                  |           |          | false
+ calculated_at      | timestamp with time zone |           |          | CURRENT_TIMESTAMP
+Indexes:
+    "racecard_02_ranking_pkey" PRIMARY KEY, btree (id)
+    "racecard_02_ranking_horse_id" btree (horse_id)
+    "racecard_02_ranking_race_id" btree (race_id)
+    "racecard_02_ranking_race_id_horse_id_key" UNIQUE CONSTRAINT, btree (race_id, horse_id)
+    "racecard_02_ranking_rank" btree (rank)
+Foreign-key constraints:
+    "racecard_02_ranking_horse_id_fkey" FOREIGN KEY (horse_id) REFERENCES racecard_02_horse(id)
+    "racecard_02_ranking_race_id_fkey" FOREIGN KEY (race_id) REFERENCES racecard_02_race(id)
+

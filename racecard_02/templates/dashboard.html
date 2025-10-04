@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard - Chawas Racing{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col">
+        <h1 class="display-4">Dashboard</h1>
+        <p class="lead">Welcome to Chawas Racing Analytics</p>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <!-- Quick Stats -->
+    <div class="col-md-3 mb-3">
+        <div class="card stats-card bg-primary text-white">
+            <div class="card-body">
+                <h5 class="card-title">{{ recent_races|length }}</h5>
+                <p class="card-text">Recent Races</p>
+                <a href="{% url 'racecard_02:available_races' %}" class="text-white">View all</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card stats-card bg-success text-white">
+            <div class="card-body">
+                <h5 class="card-title">{{ top_scores|length }}</h5>
+                <p class="card-text">Top Scores</p>
+                <a href="{% url 'racecard_02:horse_scores' %}" class="text-white">View all</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card stats-card bg-info text-white">
+            <div class="card-body">
+                <h5 class="card-title">{{ recent_rankings|length }}</h5>
+                <p class="card-text">Recent Rankings</p>
+                <a href="{% url 'racecard_02:available_races' %}" class="text-white">View all</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mb-3">
+        <div class="card stats-card bg-warning text-dark">
+            <div class="card-body">
+                <h5 class="card-title">Today</h5>
+                <p class="card-text">{{ today|date:"F j, Y" }}</p>
+                <a href="{% url 'racecard_02:horse_selection' %}" class="text-dark">View today's races</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Recent Races -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Recent Races</h5>
+            </div>
+            <div class="card-body">
+                {% if recent_races %}
+                    <div class="list-group">
+                        {% for race in recent_races %}
+                          
+                           
+                        
+                               class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ race.race_name }}</h6>
+                                    <small>{{ race.race_date }}</small>
+                                </div>
+                                <p class="mb-1">Race #{{ race.race_no }} at {{ race.race_field }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted">No recent races available.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Scores -->
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <div class="card-header">
+                <h5>Top Horse Scores</h5>
+            </div>
+            <div class="card-body">
+                {% if top_scores %}
+                    <div class="list-group">
+                        {% for score in top_scores %}
+                            <a href="{% url 'racecard_02:horse_score_detail' score.id %}" 
+                               class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">{{ score.horse.horse_name }}</h6>
+                                    <span class="badge bg-primary rounded-pill">{{ score.overall_score|floatformat:2 }}</span>
+                                </div>
+                                <p class="mb-1">{{ score.race.race_name }} on {{ score.race.race_date }}</p>
+                            </a>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p class="text-muted">No scores available.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Quick Actions -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h5>Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2 d-md-flex">
+                    <a href="{% url 'racecard_02:horse_selection' %}" class="btn btn-primary me-md-2">View Today's Horses</a>
+                    <a href="{% url 'racecard_02:horse_scores' %}" class="btn btn-success me-md-2">View All Scores</a>
+                    <a href="{% url 'racecard_02:available_races' %}" class="btn btn-info me-md-2">View Race Rankings</a>
+                    <a href="/admin/" class="btn btn-dark">Admin Panel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

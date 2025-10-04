@@ -1,0 +1,62 @@
+<!-- racecard_02/templates/racing/horse_ranking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horse Rankings - {{ race.race_name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>🏇 Horse Rankings</h2>
+        <h4>{{ race.race_name }}</h4>
+        <p class="text-muted">
+            {{ race.race_date }} | Race {{ race.race_no }} | {{ race.race_field }} | {{ race.race_distance }}m
+        </p>
+
+        {% if horses %}
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Rank</th>
+                        <th>Horse No</th>
+                        <th>Horse Name</th>
+                        <th>Score</th>
+                        <th>Jockey</th>
+                        <th>Trainer</th>
+                        <th>Odds</th>
+                        <th>Merit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for horse in horses %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ horse.horse_no }}</td>
+                        <td><strong>{{ horse.horse_name }}</strong></td>
+                        <td class="{% if horse.overall_score >= 80 %}text-success fw-bold{% elif horse.overall_score >= 60 %}text-info{% endif %}">
+                            {{ horse.overall_score }}
+                        </td>
+                        <td>{{ horse.jockey|default:"-" }}</td>
+                        <td>{{ horse.trainer|default:"-" }}</td>
+                        <td>{{ horse.odds|default:"-" }}</td>
+                        <td>{{ horse.horse_merit|default:"-" }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="alert alert-warning">
+            No horses found for this race.
+        </div>
+        {% endif %}
+
+        <a href="{% url 'admin:racecard_02_race_changelist' %}" class="btn btn-secondary mt-3">
+            ← Back to Races
+        </a>
+    </div>
+</body>
+</html>

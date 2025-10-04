@@ -1,0 +1,130 @@
+<!-- templates/racecard/rankings.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horse Rankings</title>
+    <style>
+        .ranking-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .ranking-table th, .ranking-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .ranking-table th { background-color: #f2f2f2; }
+        .rank-1 { background-color: gold; }
+        .rank-2 { background-color: silver; }
+        .rank-3 { background-color: #cd7f32; }
+        .score-cell { font-weight: bold; }
+        .race-header { background-color: #e3f2fd; padding: 10px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Horse Rankings</h1>
+    
+    {% if single_race %}
+        <div class="race-header">
+            <h2>{{ race.race_field }} - R{{ race.race_no }} - {{ race.race_name }}</h2>
+            <p>Date: {{ race.race_date }} | Distance: {{ race.race_distance }}</p>
+        </div>
+        
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Horse</th>
+                    <th>Jockey</th>
+                    <th>Trainer</th>
+                    <th>Weight</th>
+                    <th>Odds</th>
+                    <th>Overall</th>
+                    <th>Speed</th>
+                    <th>Form</th>
+                    <th>Class</th>
+                    <th>Value</th>
+                    <th>JT Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ranking in rankings %}
+                <tr class="rank-{{ ranking.rank }}">
+                    <td>{{ ranking.rank }}</td>
+                    <td>{{ ranking.horse.horse_name }} ({{ ranking.horse.horse_no }})</td>
+                    <td>{{ ranking.horse.jockey|default:"" }}</td>
+                    <td>{{ ranking.horse.trainer|default:"" }}</td>
+                    <td>{{ ranking.horse.weight|default:"" }}</td>
+                    <td>{{ ranking.horse.odds|default:"" }}</td>
+                    <td class="score-cell">{{ ranking.overall_score|floatformat:1 }}</td>
+                    <td>{{ ranking.speed_score|floatformat:1 }}</td>
+                    <td>{{ ranking.form_score|floatformat:1 }}</td>
+                    <td>{{ ranking.class_score|floatformat:1 }}</td>
+                    <td>{{ ranking.value_score|floatformat:1 }}</td>
+                    <td>{{ ranking.jt_score|floatformat:1 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+        <!-- Detailed scores section -->
+        <h3>Detailed Parameter Scores</h3>
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Horse</th>
+                    <th>Speed Rt</th>
+                    <th>Best MR</th>
+                    <th>Current MR</th>
+                    <th>JT</th>
+                    <th>Odds</th>
+                    <th>Weight</th>
+                    <th>Draw</th>
+                    <th>Blinkers</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ranking in rankings %}
+                <tr>
+                    <td>{{ ranking.horse.horse_name }}</td>
+                    <td>{{ ranking.speed_rating_score|floatformat:1 }}</td>
+                    <td>{{ ranking.best_mr_score|floatformat:1 }}</td>
+                    <td>{{ ranking.current_mr_score|floatformat:1 }}</td>
+                    <td>{{ ranking.jt_score|floatformat:1 }}</td>
+                    <td>{{ ranking.odds_score|floatformat:1 }}</td>
+                    <td>{{ ranking.weight_score|floatformat:1 }}</td>
+                    <td>{{ ranking.draw_score|floatformat:1 }}</td>
+                    <td>{{ ranking.blinkers_score|floatformat:1 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    {% else %}
+        {% for race_data in races_with_rankings %}
+        <div class="race-header">
+            <h2>{{ race_data.race.race_field }} - R{{ race_data.race.race_no }} - {{ race_data.race.race_name }}</h2>
+            <p>Date: {{ race_data.race.race_date }} | Distance: {{ race_data.race.race_distance }}</p>
+        </div>
+        
+        <table class="ranking-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Horse</th>
+                    <th>Overall</th>
+                    <th>Speed</th>
+                    <th>Form</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ranking in race_data.rankings|slice:":5" %}
+                <tr class="rank-{{ ranking.rank }}">
+                    <td>{{ ranking.rank }}</td>
+                    <td>{{ ranking.horse.horse_name }} ({{ ranking.horse.horse_no }})</td>
+                    <td class="score-cell">{{ ranking.overall_score|floatformat:1 }}</td>
+                    <td>{{ ranking.speed_score|floatformat:1 }}</td>
+                    <td>{{ ranking.form_score|floatformat:1 }}</td>
+                    <td>{{ ranking.class_score|floatformat:1 }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+    {% endif %}
+</body>
+</html>

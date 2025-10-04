@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "last_updated": "2024-01-15",
+  "class_groups": {
+    "Group 1": {
+      "min_merit": 100,
+      "max_merit": 120,
+      "weight": 20,
+      "equivalent_names": ["Group 1", "G1", "Classic", "Grade 1", "Championship"],
+      "description": "Highest level races - Classics, Championships"
+    },
+    "Group 2": {
+      "min_merit": 90,
+      "max_merit": 99,
+      "weight": 18,
+      "equivalent_names": ["Group 2", "G2", "Stakes", "Grade 2", "Feature"],
+      "description": "Major feature races just below Group 1"
+    },
+    "Group 3": {
+      "min_merit": 80,
+      "max_merit": 89,
+      "weight": 16,
+      "equivalent_names": ["Group 3", "G3", "Listed", "Grade 3", "Premier"],
+      "description": "Quality races with good prize money"
+    },
+    "Premier": {
+      "min_merit": 70,
+      "max_merit": 79,
+      "weight": 14,
+      "equivalent_names": ["Premier", "MR70+", "Feature", "Premier Handicap", "MR75"],
+      "description": "Good quality handicap races"
+    },
+    "Middle": {
+      "min_merit": 60,
+      "max_merit": 69,
+      "weight": 12,
+      "equivalent_names": ["Middle", "MR60+", "Mddle", "Middle Stakes", "MR96", "MR98"],
+      "description": "Medium class races - competitive handicaps"
+    },
+    "Moderate": {
+      "min_merit": 50,
+      "max_merit": 59,
+      "weight": 10,
+      "equivalent_names": ["Moderate", "MR50+", "MR55", "Handicap", "Class 3"],
+      "description": "Standard handicap races"
+    },
+    "Standard": {
+      "min_merit": 40,
+      "max_merit": 49,
+      "weight": 8,
+      "equivalent_names": ["Standard", "MR40+", "MR45", "Class 4", "Ordinary"],
+      "description": "Ordinary class races"
+    },
+    "Basic": {
+      "min_merit": 30,
+      "max_merit": 39,
+      "weight": 6,
+      "equivalent_names": ["Basic", "MR30+", "MR35", "Class 5", "Low"],
+      "description": "Lower class races"
+    },
+    "Maiden": {
+      "min_merit": 0,
+      "max_merit": 29,
+      "weight": 4,
+      "equivalent_names": ["Maiden", "MP", "OM", "Novice", "Class 6", "Juvenile"],
+      "description": "Maiden and novice races"
+    }
+  }
+}

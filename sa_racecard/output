@@ -1,0 +1,307 @@
+(django_env) wrf@sadcnwp-server:~/deployed/django/projects/sa_racecard$ python manage.py import_racecard_02 sample_files/20250905_08_fairview.html
+🚀 Starting racecard import...
+📁 Processing specific file: sample_files/20250905_08_fairview.html
+📁 Processing file: sample_files/20250905_08_fairview.html
+🔍 Extracting Races...
+=== DEBUG: Looking for race elements ===
+⚠️ No races found with selectors, creating from filename...
+✅ Created race from filename: Race 8 - fairview.html (No. 8)
+✅ Races processed: 1
+
+🔍 Extracting Horses for Race 8...
+Found 11 horse tables
+
+==================================================
+🔍 DEBUG: HORSE TABLE ANALYSIS
+==================================================
+
+Table 1:
+HTML: <table border="border" cellpadding="5" width="100%">
+<tbody><tr>
+<td align="center">
+Fairview<br/>
+05/09/2025<br/>
+<div class="rev4">
+8</div>
+<div class="b1">
+16.40</div>
+</td>
+<td>
+<div class="b2">
+N...
+b4 divs found: 0
+b1 divs found: 1
+  b1 text: '16.40'
+Numbers found: ['05', '09', '2025', '8', '16', '40', '10', '2000', '80', '120', '95', '90000', '1', '2', '3', '4', '5', '6', '53438', '17100', '8550', '4275', '2138', '4500', '7', '6', '6', '9', '2000', '207', '1', '2', '3', '4', '20', '15', '10', '5', '0', '18', '10', '11', '14', '9', '7', '11', '12', '5', '6', '7', '3', '4', '0', '0', '20', '0', '0', '0', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '20', '15', '10', '5', '0', '18', '10', '11', '14', '9', '7', '11', '12', '5', '6', '7', '3', '4', '0', '0', '20', '0', '0', '0', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '100', '90', '80', '70', '60', '50', '40', '30', '20', '10', '0', '41', '48', '48', '36', '35', '46', '43', '45', '37', '30', '38', '27', '17', '19', '10', '40', '100', '0', '0', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '100', '90', '80', '70', '60', '50', '40', '30', '20', '10', '0', '41', '48', '48', '36', '35', '46', '43', '45', '37', '30', '38', '27', '17', '19', '10', '40', '100', '0', '0', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+
+Table 2:
+HTML: <table border="border" cellpadding="5">
+<tbody><tr>
+<td><table cellpadding="0" width="100%">
+<tbody><tr class="bld">
+<td>
+Same Trainer: (1-7)(5-9)</td>
+<td align="right">
+Magic Tips: 3-2-1-8-4</td></t...
+b4 divs found: 0
+b1 divs found: 0
+Numbers found: ['1', '7', '5', '9', '3', '2', '1', '8', '4', '20623', '293', '637', '2446611', '271846', '14', '31', '2', '0', '0', '91', '125', '2', '82', '61', '0', '5', '5', '2', '0', '5', '2000', '22', '10', '125', '13', '8', '0', '2', '91', '125', '2', '77', '58', '5', '2', '3', '1', '1', '0', '2000', '5', '2', '125', '16', '1', '0', '4', '91', '125', '2', '84', '62', '0', '1', '5', '1', '0', '5', '2000', '7', '1', '125', '17', '7', '0', '9', '90', '125', '3', '79', '59', '5', '6', '3', '4', '2', '8', '2000', '6', '1', '125', '49', '5', '1', '6', '88', '125', '5', '80', '60', '0', '8', '6', '4', '5', '0', '1600', '8', '1', '126', '04', '6', '2', '0', '88', '125', '5', '79', '59', '5', '3', '6', '3', '3', '3', '1600', '17', '2', '125', '53', '9', '3', '3', '85', '125', '8', '65', '52', '5', '9', '3', '8', '7', '3', '2000', '5', '1', '126', '14', '4', '5', '7', '81', '126', '2', '81', '60', '5', '7', '3', '6', '6', '3', '2000', '4', '1', '126', '12', '3', '6', '8', '79', '126', '4', '81', '60', '5', '4', '8', '10', '39', '9', '3200', '50', '1', '131', '49', '0', '05', '0', '5', '8', '100', '1', '100', '15', '13', '20', '15', '48', '6', '100', '8', '16', '11', '8', '35', '2', '100', '11', '19', '13', '11', '43', '7', '62', '6', '5', '5', '10', '26', '3', '100', '26', '17', '18', '26', '61', '8', '0', '0', '0', '0', '0', '0', '4', '100', '14', '9', '17', '14', '40', '9', '2', '0', '0', '0', '0', '0', '5', '94', '8', '6', '11', '9', '27']
+
+Table 3:
+HTML: <table border="border" cellpadding="3" width="100%">
+<tbody><tr>
+<td align="center" rowspan="2" valign="top">
+<div class="b4">
+1</div>
+<br/>
+<div class="b1">
+5/1</div>
+<br/>
+<span class="b1">84</span>...
+b4 divs found: 1
+  b4 text: '1'
+b1 divs found: 1
+  b1 text: '5/1'
+Numbers found: ['1', '5', '1', '84', '6', '11', '2022', '19', '2019', '62', '0', '1', '9', '113', '30', '7', '5', '5', '75', '30', '4', '3', '4', '1', '1', '0', '0', '15', '3', '2', '1', '8', '2', '1', '2', '7', '2', '1', '1', '25', '5', '4', '5', '396188', '6', '24', '05', '31', '427', '2400', '60', '0', '80', '2', '11', '2', '1', '00', '56', '0', '150', '66', '125', '73', '9', '2', '4', '1', '86', '7', '24', '07', '12', '493', '3200', '53', '5', '80', '6', '7', '5', '9', '00', '55', '0', '209', '12', '127', '55', '11', '2', '7', '2', '68', '5', '24', '08', '27', '46', '2200', '60', '0', '80', '2', '9', '3', '2', '30', '58', '0', '134', '48', '126', '05', '5', '1', '22', '83', '4', '24', '10', '04', '122', '2000', '57', '5', '80', '7', '12', '6', '7', '75', '53', '5', '124', '69', '127', '29', '7', '1', '6', '1', '70', '6', '24', '11', '01', '160', '2000', '56', '0', '79', '3', '9', '3', '4', '00', '58', '0', '122', '85', '125', '75', '8', '1', '4', '1', '85', '3', '24', '12', '13', '214', '1900', '60', '5', '79', '7', '13', '4', '1', '35', '61', '0', '116', '45', '125', '85', '11', '2', '8', '1', '85', '9', '25', '01', '03', '243', '2000', '59', '0', '79', '4', '9', '7', '4', '90', '60', '0', '123', '68', '127', '08', '10', '1', '8', '1', '72', '7', '25', '03', '07', '341', '1900', '58', '0', '78', '9', '10', '1', '0', '05', '58', '5', '117', '50', '125', '73', '14', '1', '25', '1', '86', '2', '25', '04', '22', '399', '1900', '60', '5', '81', '10', '10', '5', '0', '65', '59', '0', '114', '04', '125', '64', '5', '1', '7', '1', '87', '6', '25', '05', '09', '425', '2000', '55', '5', '81', '8', '11', '5', '3', '85', '57', '0', '122', '99', '125', '86', '6', '1', '8', '1', '84', '6', '25', '06', '20', '482', '1800', '57', '0', '81', '9', '12', '6', '1', '85', '58', '0', '112', '08', '125', '75', '25', '2', '14', '1', '85', '5', '25', '08', '04', '5', '2000', '58', '0', '81', '2', '9', '1', '0', '50', '58', '0', '125', '94', '125', '17', '5', '1', '7', '1', '91', '5', '84', '05732', '1201332125', '363471556', '1']
+==================================================
+🔍 SEARCHING FOR JOCKEY-TRAINER TABLE...
+🎯 FOUND J-T TABLE 11 with 3 valid rows!
+🔍 ANALYZING J-T ROW: ['1', 'Kotzen S B', 'Mxothwa L', '100', '15', '13', '20', '15', '48', '6', 'Laing Tara', 'Maujean C', '100', '8', '16', '11', '8', '35']
+✅ Horse 1: Mxothwa L/Kotzen S B, Score=53.7
+✅ Horse 6: Maujean C/Laing Tara, Score=46.4
+  🎯 Horse 1: J-T Score=53.7 (Mxothwa L/Kotzen S B)
+  🎯 Horse 6: J-T Score=46.4 (Maujean C/Laing Tara)
+🔍 ANALYZING J-T ROW: ['2', 'Mitchley K', 'Yeni M', '100', '11', '19', '13', '11', '43', '7', 'Kotzen S B', 'Katjedi M K', '62', '6', '5', '5', '10', '26']
+✅ Horse 2: Yeni M/Mitchley K, Score=50.5
+✅ Horse 7: Katjedi M K/Kotzen S B, Score=43.4
+  🎯 Horse 2: J-T Score=50.5 (Yeni M/Mitchley K)
+  🎯 Horse 7: J-T Score=43.4 (Katjedi M K/Kotzen S B)
+🔍 ANALYZING J-T ROW: ['3', 'Greeff A C', 'Fourie R', '100', '26', '17', '18', '26', '61', '8', 'Oosthuizen Z', 'Dookhit G', '0', '0', '0', '0', '0', '0']
+✅ Horse 3: Fourie R/Greeff A C, Score=62.2
+✅ Horse 8: Dookhit G/Oosthuizen Z, Score=0
+  🎯 Horse 3: J-T Score=62.2 (Fourie R/Greeff A C)
+  🎯 Horse 8: J-T Score=0 (Dookhit G/Oosthuizen Z)
+🔍 ANALYZING J-T ROW: ['4', 'Smith G D', 'Habib C', '100', '14', '9', '17', '14', '40', '9', 'Nel J', 'Nastili N', '2', '0', '0', '0', '0', '0']
+✅ Horse 4: Habib C/Smith G D, Score=50.2
+✅ Horse 9: Nastili N/Nel J, Score=0.2
+  🎯 Horse 4: J-T Score=50.2 (Habib C/Smith G D)
+  🎯 Horse 9: J-T Score=0.2 (Nastili N/Nel J)
+🔍 ANALYZING J-T ROW: ['5', 'Nel J', 'Little C', '94', '8', '6', '11', '9', '27']
+✅ Horse 5: Little C/Nel J, Score=43.5
+  🎯 Horse 5: J-T Score=43.5 (Little C/Nel J)
+✅ Successfully parsed J-T data from table 11
+✅ SUCCESS: Parsed J-T data for 9 horses: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+J-T analysis data keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Stored J-T data in class cache: 9 horses
+
+🔍 Analyzing table 1...
+Skipping table 1: No b4 div found
+
+🔍 Analyzing table 2...
+⚡ Speed-related content found in table 2
+  Content sample: SAME TRAINER: (1-7)(5-9) MAGIC TIPS: 3-2-1-8-4 FIELD STATISTICS AVERAGE PER RUNNER - RUNS: - RUNS: 206 23 WINS: WINS: 29 3 PLACES: PLACES: 63 7 STAKES...
+Skipping table 2: Not enough main TDs (1)
+
+🔍 Analyzing table 3...
+⚡ Speed-related content found in table 3
+  Content sample: 1 5/1 84 PAINITE (A) 6 Y.O. B G. GELD:11 AUG 2022. DOB: 19 SEP 2019 62.0 1 9 LUYOLO MXOTHWA 113 * 30: 7 -5-5 SHARON B KOTZEN 75 * 30: 4 -3-4 P.E: FARV...
+Processing horse 1...
+ℹ️ Using default speed index for horse 1: 50
+Looking for J-T data for horse 1...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 1: Score=53.7
+[DEBUG] Horse 1: name=PAINITE
+[DEBUG]  -> Odds=5/1, Merit=84, Best MR=None, Blinkers=False, Age=6
+[DEBUG]  -> Jockey=Mxothwa L, Trainer=Kotzen S B
+[DEBUG]  -> Jockey-Trainer Score=53.7, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 1: 53.7
+🐎 Horse 1: PAINITE | Blinkers=False | Odds=5/1 | Merit=84 | Best MR=- | Speed=50 | Jockey=Mxothwa L | Trainer=Kotzen S B | J-T Score=53.7 | J-T Rating=Good
+
+🔍 Analyzing table 4...
+⚡ Speed-related content found in table 4
+  Content sample: 2 5/2 82 MAKHACHEV (BA) 5 Y.O. B G. GELD: 9 FEB 2023. DOB: 16 NOV 2020 61.0 5 9 MUZI YENI 107 * 30: 6 -4-2 KELLY MITCHLEY 97 * 30: 8 -3-4 P.E: FARVW W...
+Processing horse 2...
+ℹ️ Using default speed index for horse 2: 50
+Looking for J-T data for horse 2...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 2: Score=50.5
+[DEBUG] Horse 2: name=MAKHACHEV
+[DEBUG]  -> Odds=5/2, Merit=82, Best MR=None, Blinkers=True, Age=5
+[DEBUG]  -> Jockey=Yeni M, Trainer=Mitchley K
+[DEBUG]  -> Jockey-Trainer Score=50.5, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 2: 50.5
+🐎 Horse 2: MAKHACHEV | Blinkers=True | Odds=5/2 | Merit=82 | Best MR=- | Speed=50 | Jockey=Yeni M | Trainer=Mitchley K | J-T Score=50.5 | J-T Rating=Good
+
+🔍 Analyzing table 5...
+⚡ Speed-related content found in table 5
+  Content sample: 3 5/2 81 HEART STEALER (BA) 6 Y.O. CH G. GELD: 4 AUG 2022. DOB: 20 SEP 2019 60.5 4 9 RICHARD FOURIE 143 * 30: 3 -5-6 ALAN GREEFF 116 * 30: 7 -3-2 P.E:...
+Processing horse 3...
+ℹ️ Using default speed index for horse 3: 50
+Looking for J-T data for horse 3...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 3: Score=62.2
+[DEBUG] Horse 3: name=HEART STEALER
+[DEBUG]  -> Odds=5/2, Merit=81, Best MR=None, Blinkers=True, Age=6
+[DEBUG]  -> Jockey=Fourie R, Trainer=Greeff A C
+[DEBUG]  -> Jockey-Trainer Score=62.2, Rating=Very Good
+🐎 FINAL JT SCORE FOR HORSE 3: 62.2
+🐎 Horse 3: HEART STEALER | Blinkers=True | Odds=5/2 | Merit=81 | Best MR=- | Speed=50 | Jockey=Fourie R | Trainer=Greeff A C | J-T Score=62.2 | J-T Rating=Very Good
+
+🔍 Analyzing table 6...
+⚡ Speed-related content found in table 6
+  Content sample: 4 10/1 81 STAR COIN (A) 6 Y.O. B G. GELD:16 NOV 2021. DOB: 3 SEP 2019 60.5 7 9 CALVIN HABIB 85 * 30: 5 -3-4 GAVIN SMITH 78 * 30: 1 -5-5 P.E: FARVW WET...
+Processing horse 4...
+ℹ️ Using default speed index for horse 4: 50
+Looking for J-T data for horse 4...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 4: Score=50.2
+[DEBUG] Horse 4: name=STAR COIN
+[DEBUG]  -> Odds=10/1, Merit=81, Best MR=None, Blinkers=False, Age=6
+[DEBUG]  -> Jockey=Habib C, Trainer=Smith G D
+[DEBUG]  -> Jockey-Trainer Score=50.2, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 4: 50.2
+🐎 Horse 4: STAR COIN | Blinkers=False | Odds=10/1 | Merit=81 | Best MR=- | Speed=50 | Jockey=Habib C | Trainer=Smith G D | J-T Score=50.2 | J-T Rating=Good
+
+🔍 Analyzing table 7...
+⚡ Speed-related content found in table 7
+  Content sample: 5 7/1 80 GREEN MANDARIN (CA) 6 Y.O. B G. GELD:13 DEC 2022. DOB: 9 NOV 2019 60.0 8 9 CHAD LITTLE 56 * 30: 1 -3-4 JUAN NEL 59 * 30: 2 -1-5 P.E: FARVW WE...
+Processing horse 5...
+ℹ️ Using default speed index for horse 5: 50
+Looking for J-T data for horse 5...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 5: Score=43.5
+[DEBUG] Horse 5: name=GREEN MANDARIN
+[DEBUG]  -> Odds=7/1, Merit=80, Best MR=None, Blinkers=False, Age=6
+[DEBUG]  -> Jockey=Little C, Trainer=Nel J
+[DEBUG]  -> Jockey-Trainer Score=43.5, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 5: 43.5
+🐎 Horse 5: GREEN MANDARIN | Blinkers=False | Odds=7/1 | Merit=80 | Best MR=- | Speed=50 | Jockey=Little C | Trainer=Nel J | J-T Score=43.5 | J-T Rating=Good
+
+🔍 Analyzing table 8...
+⚡ Speed-related content found in table 8
+  Content sample: 6 7/1 79 DYNALLEY (BA) 5 Y.O. B G. GELD:20 DEC 2022. DOB: 3 SEP 2020 59.5 3 9 CHASE MAUJEAN 65 * 30: 3 -5-1 TARA LAING 90 * 30: 4 -8-5 P.E: FARVW WET:...
+Processing horse 6...
+ℹ️ Using default speed index for horse 6: 50
+Looking for J-T data for horse 6...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 6: Score=46.4
+[DEBUG] Horse 6: name=DYNALLEY
+[DEBUG]  -> Odds=7/1, Merit=79, Best MR=None, Blinkers=True, Age=5
+[DEBUG]  -> Jockey=Maujean C, Trainer=Laing Tara
+[DEBUG]  -> Jockey-Trainer Score=46.4, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 6: 46.4
+🐎 Horse 6: DYNALLEY | Blinkers=True | Odds=7/1 | Merit=79 | Best MR=- | Speed=50 | Jockey=Maujean C | Trainer=Laing Tara | J-T Score=46.4 | J-T Rating=Good
+
+🔍 Analyzing table 9...
+⚡ Speed-related content found in table 9
+  Content sample: 7 7/1 79 SLAINTE MHATH (BA) 5 Y.O. B G. GELD: 5 OCT 2023. DOB: 31 OCT 2020 59.5 6 9 MALESELA K KATJEDI 58 * 30: 3 -1-5 SHARON B KOTZEN 75 * 30: 4 -3-4...
+Processing horse 7...
+ℹ️ Using default speed index for horse 7: 50
+Looking for J-T data for horse 7...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 7: Score=43.4
+[DEBUG] Horse 7: name=SLAINTE MHATH
+[DEBUG]  -> Odds=7/1, Merit=79, Best MR=None, Blinkers=True, Age=5
+[DEBUG]  -> Jockey=Katjedi M K, Trainer=Kotzen S B
+[DEBUG]  -> Jockey-Trainer Score=43.4, Rating=Good
+🐎 FINAL JT SCORE FOR HORSE 7: 43.4
+🐎 Horse 7: SLAINTE MHATH | Blinkers=True | Odds=7/1 | Merit=79 | Best MR=- | Speed=50 | Jockey=Katjedi M K | Trainer=Kotzen S B | J-T Score=43.4 | J-T Rating=Good
+
+🔍 Analyzing table 10...
+⚡ Speed-related content found in table 10
+  Content sample: 8 7/1 77 GEORGE HANDEL (A) 5 Y.O. B G. GELD:28 AUG 2023. DOB: 28 OCT 2020 58.5 -4.0 2 9 GIRISH DOOKHIT 28 * 30: 2 -1-1 ZIETSMAN OOSTHUIZEN 55 * 30: 1 ...
+Processing horse 8...
+ℹ️ Using default speed index for horse 8: 50
+Looking for J-T data for horse 8...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 8: Score=0
+[DEBUG] Horse 8: name=GEORGE HANDEL
+[DEBUG]  -> Odds=7/1, Merit=77, Best MR=None, Blinkers=False, Age=5
+[DEBUG]  -> Jockey=Dookhit G, Trainer=Oosthuizen Z
+[DEBUG]  -> Jockey-Trainer Score=0, Rating=Poor
+🐎 FINAL JT SCORE FOR HORSE 8: 0
+🐎 Horse 8: GEORGE HANDEL | Blinkers=False | Odds=7/1 | Merit=77 | Best MR=- | Speed=50 | Jockey=Dookhit G | Trainer=Oosthuizen Z | J-T Score=0 | J-T Rating=Poor
+
+🔍 Analyzing table 11...
+⚡ Speed-related content found in table 11
+  Content sample: 9 20/1 65 ORANJEMUND (BA) 5 Y.O. B G. GELD:22 NOV 2023. DOB: 28 AUG 2020 52.5 -2.5 9 9 NIRVAN NASTILI 49 * 30: 2 -3-2 JUAN NEL 59 * 30: 2 -1-5 P.E: FA...
+Processing horse 9...
+ℹ️ Using default speed index for horse 9: 50
+Looking for J-T data for horse 9...
+Available J-T keys: [1, 6, 2, 7, 3, 8, 4, 9, 5]
+✅ Found J-T data for horse 9: Score=0.2
+[DEBUG] Horse 9: name=ORANJEMUND
+[DEBUG]  -> Odds=20/1, Merit=65, Best MR=None, Blinkers=True, Age=5
+[DEBUG]  -> Jockey=Nastili N, Trainer=Nel J
+[DEBUG]  -> Jockey-Trainer Score=0.2, Rating=Poor
+🐎 FINAL JT SCORE FOR HORSE 9: 0.2
+🐎 Horse 9: ORANJEMUND | Blinkers=True | Odds=20/1 | Merit=65 | Best MR=- | Speed=50 | Jockey=Nastili N | Trainer=Nel J | J-T Score=0.2 | J-T Rating=Poor
+✅ Horses saved: 9
+💾 Saved horse 9 with speed_rating: 50
+✅ Verified speed_rating in DB: 50
+✅ Horses processed for race 8: 9
+
+📊 Calculating scores for Race 8...
+Found 9 horses in database for this race
+    🐎 Processing PAINITE (No. 1)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for PAINITE
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 80, 'jt_score': 53, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 60, 'draw_score': 50, 'equipment_score': 60, 'age_score': 70}
+    ✅ Updated score for PAINITE: 56
+    🐎 Processing MAKHACHEV (No. 2)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for MAKHACHEV
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 80, 'jt_score': 50, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 80, 'draw_score': 50, 'equipment_score': 40, 'age_score': 70}
+    ✅ Updated score for MAKHACHEV: 55
+    🐎 Processing HEART STEALER (No. 3)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for HEART STEALER
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 80, 'jt_score': 62, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 80, 'draw_score': 50, 'equipment_score': 40, 'age_score': 70}
+    ✅ Updated score for HEART STEALER: 57
+    🐎 Processing STAR COIN (No. 4)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for STAR COIN
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 80, 'jt_score': 50, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 50, 'draw_score': 50, 'equipment_score': 60, 'age_score': 70}
+    ✅ Updated score for STAR COIN: 55
+    🐎 Processing GREEN MANDARIN (No. 5)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for GREEN MANDARIN
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 80, 'jt_score': 43, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 50, 'draw_score': 50, 'equipment_score': 60, 'age_score': 70}
+    ✅ Updated score for GREEN MANDARIN: 54
+    🐎 Processing DYNALLEY (No. 6)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for DYNALLEY
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 70, 'jt_score': 46, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 50, 'draw_score': 50, 'equipment_score': 40, 'age_score': 70}
+    ✅ Updated score for DYNALLEY: 54
+    🐎 Processing SLAINTE MHATH (No. 7)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for SLAINTE MHATH
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 70, 'jt_score': 43, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 50, 'draw_score': 50, 'equipment_score': 40, 'age_score': 70}
+    ✅ Updated score for SLAINTE MHATH: 53
+    🐎 Processing GEORGE HANDEL (No. 8)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for GEORGE HANDEL
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 70, 'jt_score': 0, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 50, 'draw_score': 50, 'equipment_score': 60, 'age_score': 70}
+    ✅ Updated score for GEORGE HANDEL: 48
+    🐎 Processing ORANJEMUND (No. 9)...
+SCORING DEBUG: 🏇 Calculating comprehensive score for ORANJEMUND
+SCORING DEBUG: Using speed rating: 50
+SCORING DEBUG: Component scores: {'speed_score': 55, 'best_mr_score': 50, 'current_mr_score': 50, 'jt_score': 0, 'form_score': 50, 'class_score': 50, 'consistency_score': 50, 'distance_score': 50, 'track_score': 50, 'recovery_score': 50, 'odds_score': 40, 'draw_score': 50, 'equipment_score': 40, 'age_score': 70}
+    ✅ Updated score for ORANJEMUND: 46
+
+====================================================================================================
+📊 DETAILED RANKINGS - Race 8
+====================================================================================================
+Pos  No   Horse                Total  BestMR CurMR  JT     Form   Class  Speed 
+----------------------------------------------------------------------------------------------------
+1    3    HEART STEALER        57     50     80     62     50     50     55     
+2    1    PAINITE              56     50     80     53     50     50     55     
+3    2    MAKHACHEV            55     50     80     50     50     50     55     
+4    4    STAR COIN            55     50     80     50     50     50     55     
+5    5    GREEN MANDARIN       54     50     80     43     50     50     55     
+6    6    DYNALLEY             54     50     70     46     50     50     55     
+7    7    SLAINTE MHATH        53     50     70     43     50     50     55     
+8    8    GEORGE HANDEL        48     50     70     0      50     50     55     
+9    9    ORANJEMUND           46     50     50     0      50     50     55     
+====================================================================================================
+(django_env) wrf@sadcnwp-server:~/deployed/django/projects/sa_racecard$ 
